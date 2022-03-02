@@ -14,7 +14,7 @@
     </nav>
     <div @click="toggleSidebar" class="top-bar-cart-link">
       <i class="icofont-cart-alt icofont-1x"></i>
-      <span>Cart ({{ totalQuantity }})</span>
+      <span>Cart: ({{ totalQuantity }})</span>
     </div>
   </header>
   <router-view :inventory="inventory" :addToCart="addToCart" />
