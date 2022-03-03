@@ -23,18 +23,26 @@
 
       </div>
 
+      <div class="counter">
+
+        <CounterComponent/>
+
+      </div>
+
     </main>
   </div>
 </template>
 
 <script>
 import ProductCard from '@/components/ProductCard.vue'
+import CounterComponent from '@/components/CounterComponent.vue'
 
 export default {
   name: 'HomeView',
   props: ['inventory', 'addToCart'],
   components: {
-    ProductCard
+    ProductCard,
+    CounterComponent
   }
 }
 </script>
